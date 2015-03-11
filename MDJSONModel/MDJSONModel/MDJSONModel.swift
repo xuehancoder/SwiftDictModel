@@ -14,7 +14,13 @@ import Foundation
     static func customeClassMapping()->[String:String]?
     
 }
-class SwiftDictModel{
+class MDJSONModel{
+    
+    // 单例
+    private static let instance = MDJSONModel()
+    class var shareInstance:MDJSONModel {
+        return instance
+    }
     
     ///  将字典转为模型
     ///
